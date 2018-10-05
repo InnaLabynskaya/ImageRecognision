@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-Ty-i8y">
+                                <rect key="frame" x="16" y="36" width="343" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="64l-xu-gsw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pii-WU-g1f">
+                                <rect key="frame" x="16" y="482" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQz-i9-eLd">
+                                <rect key="frame" x="16" y="354" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CQV-iz-zWr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aE3-2S-dEn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YQz-i9-eLd" firstAttribute="trailing" secondItem="XAX-Ty-i8y" secondAttribute="trailing" id="6gE-g4-4Vj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAX-Ty-i8y" secondAttribute="trailing" constant="16" id="F7G-hq-qJu"/>
+                            <constraint firstItem="XAX-Ty-i8y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lci-9S-kUZ"/>
+                            <constraint firstItem="YQz-i9-eLd" firstAttribute="width" secondItem="XAX-Ty-i8y" secondAttribute="width" id="OA9-nw-9LQ"/>
+                            <constraint firstItem="Pii-WU-g1f" firstAttribute="trailing" secondItem="XAX-Ty-i8y" secondAttribute="trailing" id="Pua-O5-dZ6"/>
+                            <constraint firstItem="YQz-i9-eLd" firstAttribute="top" secondItem="XAX-Ty-i8y" secondAttribute="bottom" constant="32" id="adh-1l-vIw"/>
+                            <constraint firstItem="YQz-i9-eLd" firstAttribute="leading" secondItem="XAX-Ty-i8y" secondAttribute="leading" id="ag1-Dp-VyI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pii-WU-g1f" secondAttribute="bottom" constant="164" id="gAt-hK-kfT"/>
+                            <constraint firstItem="Pii-WU-g1f" firstAttribute="leading" secondItem="XAX-Ty-i8y" secondAttribute="leading" id="ujv-cG-QxM"/>
+                            <constraint firstItem="XAX-Ty-i8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ytT-kU-nXV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="YQz-i9-eLd" id="oLc-Gz-ILE"/>
+                        <outlet property="pictureImageView" destination="XAX-Ty-i8y" id="dbr-bi-mKD"/>
+                        <outlet property="titleLabel" destination="Pii-WU-g1f" id="W6h-F4-9gE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
