@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F89D0F216795ED00E103C6 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41F89D0D216795ED00E103C6 /* cat.jpg */; };
+		41F89D10216795ED00E103C6 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41F89D0E216795ED00E103C6 /* dog.jpg */; };
+		41F89D12216795FA00E103C6 /* banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41F89D11216795FA00E103C6 /* banana.jpg */; };
+		41F89D142167960200E103C6 /* rat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41F89D132167960100E103C6 /* rat.jpg */; };
+		41F89D162167A39F00E103C6 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F89D152167A39F00E103C6 /* UIImage+Additions.swift */; };
 		9DE78D3821678B9E0043E01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE78D3721678B9E0043E01E /* AppDelegate.swift */; };
 		9DE78D3A21678B9E0043E01E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE78D3921678B9E0043E01E /* ViewController.swift */; };
 		9DE78D3D21678B9E0043E01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE78D3B21678B9E0043E01E /* Main.storyboard */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41F89D0D216795ED00E103C6 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
+		41F89D0E216795ED00E103C6 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		41F89D11216795FA00E103C6 /* banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = banana.jpg; sourceTree = "<group>"; };
+		41F89D132167960100E103C6 /* rat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rat.jpg; sourceTree = "<group>"; };
+		41F89D152167A39F00E103C6 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		9DE78D3421678B9E0043E01E /* ImageRecognision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageRecognision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE78D3721678B9E0043E01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DE78D3921678B9E0043E01E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +66,10 @@
 		9DE78D3621678B9E0043E01E /* ImageRecognision */ = {
 			isa = PBXGroup;
 			children = (
+				41F89D0D216795ED00E103C6 /* cat.jpg */,
+				41F89D11216795FA00E103C6 /* banana.jpg */,
+				41F89D132167960100E103C6 /* rat.jpg */,
+				41F89D0E216795ED00E103C6 /* dog.jpg */,
 				9DE78D3721678B9E0043E01E /* AppDelegate.swift */,
 				9DE78D3921678B9E0043E01E /* ViewController.swift */,
 				9DE78D4921678BB30043E01E /* Inceptionv3.mlmodel */,
@@ -63,6 +77,7 @@
 				9DE78D3E21678B9F0043E01E /* Assets.xcassets */,
 				9DE78D4021678B9F0043E01E /* LaunchScreen.storyboard */,
 				9DE78D4321678B9F0043E01E /* Info.plist */,
+				41F89D152167A39F00E103C6 /* UIImage+Additions.swift */,
 			);
 			path = ImageRecognision;
 			sourceTree = "<group>";
@@ -126,7 +141,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE78D4221678B9F0043E01E /* LaunchScreen.storyboard in Resources */,
+				41F89D142167960200E103C6 /* rat.jpg in Resources */,
+				41F89D10216795ED00E103C6 /* dog.jpg in Resources */,
 				9DE78D3F21678B9F0043E01E /* Assets.xcassets in Resources */,
+				41F89D0F216795ED00E103C6 /* cat.jpg in Resources */,
+				41F89D12216795FA00E103C6 /* banana.jpg in Resources */,
 				9DE78D3D21678B9E0043E01E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE78D3A21678B9E0043E01E /* ViewController.swift in Sources */,
+				41F89D162167A39F00E103C6 /* UIImage+Additions.swift in Sources */,
 				9DE78D4A21678BB40043E01E /* Inceptionv3.mlmodel in Sources */,
 				9DE78D3821678B9E0043E01E /* AppDelegate.swift in Sources */,
 			);
