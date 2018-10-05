@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CoreML.xcodeproj">
+      location = "self:ImageRecognision.xcodeproj">
    </FileRef>
 </Workspace>

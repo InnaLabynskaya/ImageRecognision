@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CoreML
+//  ImageRecognision
 //
 //  Created by Inna Kuts on 10/5/18.
 //  Copyright © 2018 Inna Kuts. All rights reserved.
