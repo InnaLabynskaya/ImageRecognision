@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     
+    private var model: Inceptionv3 = Inceptionv3()
+    
     let images = ["cat.jpg", "dog.jpg", "rat.jpg", "banana.jpg"]
     var index = 0
     
@@ -30,6 +32,9 @@ class ViewController: UIViewController {
         self.pictureImageView.image = image
         
         let resizedImage = image?.resizeTo(size: CGSize(width: 299, height: 299))
+        let buffer = resizedImage?.toBuffer()
+        let prediction = try! self.model.prediction(image: buffer!)
+        self.titleLabel.text = prediction.classLabel
         
         index = index + 1
     }
